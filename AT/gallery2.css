@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:system-ui;
+}
+header {
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.15)),
+    url("prem2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+nav {
+  width: 100%;
+  height: 15vh;
+  background: rgba(0, 0, 0, 0.2);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+nav .logo {
+  width: 18%;
+  text-align: center;
+color:#fff;
+font-size:3rem;
+margin-left: 2%;
+border-radius: 90%;
+font-family:Arial, Helvetica, sans-serif;
+border: 1px #fff solid;
+background:linear-gradient(90deg,#f40909 0%,orange 150%);
+font-style: italic;
+font-weight: 900;
+  /*background: red;*/
+}
+
+nav .menu {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav .menu a {
+  width: 25%;
+  text-decoration:none;
+  color: white;
+  font-weight: bold;
+}
+nav .menu a:hover{
+  color: #00b894;
+}
+nav .menu a:first-child {
+  width: 15%;
+}
+
+.des {
+  font-size: 2rem;
+  width: 100%;
+  margin-top: 2%;
+  box-shadow: 2px 0px 20px black;
+}
+.des h2 {
+  padding-left: 7%;
+  padding-bottom: 1%;
+}
+.head {
+  padding: 10%;
+  font-size: 1.5rem;
+  
+}
+h3{
+    margin-bottom: 3%;
+}
+h4{
+    margin-bottom: 1%;
+}
+.head p{
+    margin-bottom: 1%;
+    margin-top: 3%;
+}
+.list1{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    box-shadow: -1px 1px 3px black;
+    
+}
+.list1 img{
+    width: 30%;
+}
+.list1 h5{
+ 
+    padding: 5%;
+    font-size: 0.9rem;
+    
+}

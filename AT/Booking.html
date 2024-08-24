@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <title>ro.Turbo</title>
+        <link rel="stylesheet" href="A.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+        <script src="https://kit.fontawesome.com/1a1cbeda3c.js" crossorigin="anonymous"></script>
+        <script src="https://web3forms.com/client/script.js" async defer></script>
+
+
+    </head>
+    <header>
+	
+        <nav>
+            <div class="logo"> मेरो मथुरा
+        </div>
+            <div class="menu">
+                <a href="HOME.html">Home</a>
+                <a href="gallery2.html">Destination</a>
+                <a href="index.html" target="_blank">Packages</a>
+                <a href="Booking.html">Contact</a>
+            </div>
+        </nav>
+    </header>        
+    <body>
+       
+        <div class="containers" align="center">
+            <div class="heading">Our Affordable Packages</div>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <div class="card-details">
+                    <div class="card-box">
+                        <input type="hidden" name="access_key" value="c3bd61f3-df69-45d3-9843-c5e41a02318c">
+                        <span class="details">Full Name</span>
+                        <input type="text" name="full_Name" placeholder="Enter Your Name" required>
+                    </div>
+                    <div class="card-box">
+                        <span class="details">Gender</span>
+                        <select required name="Gender">
+                            <option value="Null">--Select Option--</option>
+                            <option value="Male" name="Male">Male</option>
+                            <option value="Female" name="Female">Female</option>
+                        </select>
+                    </div>
+                    <div class="card-box">
+                        <span class="details">Mobile Number</span>
+                        <input type="number" name="Mobile Number" placeholder="Your Number" required pattern="[0-9]" size="10" data-accepts="onlyNumeric">
+                    </div>
+                    <div class="card-box">
+                        <span class="details">E-mail</span>
+                        <input type="email" name="email" placeholder="Enter Your E-mail" required>
+                    </div>
+                    <div class="card-box">
+                        <span class="details">Pin Code</span>
+                        <input type="number" name="PIN-Code" placeholder="Pin" required maxlength="6">
+                    </div>
+                    <div class="card-box">
+                        <span class="details">Address</span>
+                        <input type="text" name="Address" placeholder="Your Address" required>
+                    </div>
+                    <div class="card-box">
+                        <span class="details">Select Packages</span>
+                        <select required name="Packages">
+                            <option value="Null" name="Null">--Select Option--</option>
+                            <option value="Basic" name="Basic">Basic</option>
+                            <option value="Standard" name="Standard">Standard</option>
+                            <option value="Premium" name="Premium">Premium</option>
+                        </select></div>
+                    
+                        
+                        <br>
+                        <br>
+                        <br>
+                </div>
+                        <div class="button">
+                            <button type="submit" class="btn" onclick="openPopup()">SUBMIT</button>
+                        <div class="popup" id="popup">
+                            <img src="check.png">
+                            <h2>Thank You!</h2>
+                            <p>Your details has been successfully submitted. Thanks!</p>
+                            <button type="button" onclick="closePopup()">Ok</button>
+                        </div>
+                        </div>
+            </form>
+                <script>
+                    let popup=document.getElementById("popup");
+
+                    function openPopup(){
+                        popup.classList.add("open-popup");
+
+                    }
+                    function closePopup(){
+                        popup.classList.remove("open-popup");
+                    }
+                </script>
+            
+    </body>
+        </html>
